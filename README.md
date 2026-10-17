@@ -17,7 +17,7 @@ Tutorial on how to archive your own computer to be part of computers.json :-)
 
 File Set up Example:
 
-> ```--- {name}_computer_archive (folder)
+```--- {name}_computer_archive (folder)
         |
         --- polycam_EXPORT (folder)
             |
@@ -42,8 +42,7 @@ File Set up Example:
                 |
                 --- (COPY flatbedScans_Export folder) HERE)
             --- textures_POLYCAM (folder)
-
-> ```
+```
 
 ## Step 1: Using Polycam
 

@@ -16,30 +16,30 @@ Tutorial on how to archive your own computer to be part of computers.json :-)
 
 File Set up Example:
 > --- {name}_computer_archive (folder)
-        |
-        --- polycam_EXPORT (folder)
-            |
-            --- textures (folder)
-            --- {name}.mtl
-            --- {name}.obj
-        --- meshlab_EXPORT (folder)
-            |
-            --- {name}_computer_fixedmesh.mlp 
-            --- {name}_computer_fixedmesh.obj
-        --- flatbedScans_EXPORT (folder)
-            |
-            --- {name}_desktopScreenshot.png
-            --- {name}_keyboardSurface_Scan.jpeg
-            --- {name}_topSurface_Scan.jpeg
-            --- {name}_bottomSurface_Scan.jpeg
-        --- blender_file (folder)
-            |
-            --- {name}_computer_fixedmesh.obj
-            --- {name}_computer.blend
-            --- textures_UPDATED (folder)
-                |
-                --- (COPY flatbedScans_Export (folder) HERE)
-            --- textures_POLYCAM (folder)
+        >|
+        >--- polycam_EXPORT (folder)
+            >|
+            >--- textures (folder)
+            >--- {name}.mtl
+            >--- {name}.obj
+        >--- meshlab_EXPORT (folder)
+            >|
+            >--- {name}_computer_fixedmesh.mlp 
+            >--- {name}_computer_fixedmesh.obj
+        >--- flatbedScans_EXPORT (folder)
+            >|
+            >--- {name}_desktopScreenshot.png
+            >--- {name}_keyboardSurface_Scan.jpeg
+            >--- {name}_topSurface_Scan.jpeg
+            >--- {name}_bottomSurface_Scan.jpeg
+        >--- blender_file (folder)
+            >|
+            >--- {name}_computer_fixedmesh.obj
+            >--- {name}_computer.blend
+            >--- textures_UPDATED (folder)
+                >|
+                >--- (COPY flatbedScans_Export (folder) HERE)
+            >--- textures_POLYCAM (folder)
 
 ## Step 1: Using Polycam
 

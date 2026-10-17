@@ -2,6 +2,8 @@
 
 Tutorial on how to archive your own computer to be part of computers.json :-)
 
+Everything is completely free and can be DIYed! It is okay if it it jank! It is made by humans! Lets use what we have accessible to us--no fancy, expensive equipment required! :-)
+
 ## Tools/Software needed
 
 - Polycam (Free version, OK!)
@@ -60,6 +62,15 @@ File Set up Example:
 
 - Export your model as a OBJ file !
 
+## Step 2: Flatbed Scan the Surfaces
+
+*why? we want to get high quality scans because photogrammetry will not capture these fine, tiny details. Using a flatbed scanner to capture the surfaces will allow us to create high-resolution 3D 'captures'.*
+
+Settings (I used, may differ between scanners!):
+- 600 DPI (300 DPI minimum)
+- JPEG OUTPUT (tiff/png is OK! no pdf)
+- Scanned Tabloid 
+
 ## Step 2: Import 3D model -> Meshlab
 
 *why? to ensure the mesh is optimized + fixed! we want our obj file to be as small as possible but still retaining as much detail. So we use these tools to clean up any unnecessary vertices/planes that won't effect the overall final model*
@@ -94,3 +105,9 @@ File Set up Example:
     - Merge by Distance
     - Delete Loose
 
+**Step 3.3 - Adding Texture to Specific Surfaces**
+
+*why? we can align the flatbed scans onto the 3D model!*
+
+- Make sure the "Selected: Mode" is on faces
+- 

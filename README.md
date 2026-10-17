@@ -10,7 +10,7 @@ Tutorial on how to archive your own computer to be part of computers.json :-)
 - Blender (Free!)
 - MeshLab (Free!)
 
-# Tips
+## Tips
 
 - Have a GOOD file system!
 - Make sure to LABEL properly!
@@ -61,3 +61,15 @@ File Set up Example:
 - Export your model as a OBJ file !
 
 ## Step 2: Take 3D model -> Meshlab
+
+- Open your model(obj) in Meshlab to clean up vertices/planes/holes
+- Every model is different but I recommend to go through filters -> cleaning & repairing folder
+
+<img src="imgs/meshlab_settings.png" alt="Polycam cleanup details" width="300">
+
+- Save your model(obj)
+
+## Step 3: Blender
+
+
+

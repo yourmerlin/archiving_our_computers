@@ -1,4 +1,5 @@
 # How to Archive your Computer!
+<img src="imgs/computerjson_CLOSEUP.png" alt="Polycam settings" width="300">
 
 Tutorial on how to archive your own computer to be part of computers.json :-)
 
@@ -64,17 +65,19 @@ File Set up Example:
 
 ## Step 2: Scan the Surfaces (via flatbed scanner)
 
-*why? we want to get high quality scans because photogrammetry will not capture these fine, tiny details. Using a flatbed scanner to capture the surfaces will allow us to create high-resolution 3D 'captures'.*
+_why? we want to get high quality scans because photogrammetry will not capture these fine, tiny details. Using a flatbed scanner to capture the surfaces will allow us to create high-resolution 3D 'captures'._
 
 Settings (I used, may differ between scanners!):
+
 - 600 DPI (300 DPI minimum)
 - JPEG OUTPUT (tiff/png is OK! no pdf)
-- Scanned at Tabloid size (landscape) 
+- Scanned at Tabloid size (landscape)
 
 Surfaces to Scan:
+
 - Top Surface of Laptop
 - Bottom Surface of Laptop
-- Inside of Laptop (keyboard & screen) *(If possible)*
+- Inside of Laptop (keyboard & screen) _(If possible)_
 
 <img src="imgs/flatbed_scanner.jpeg" alt="Polycam cleanup details" width="300">
 
@@ -82,10 +85,9 @@ You can honestly lay your laptop flat (CLOSED). And scan both sides. If your lap
 
 <img src="imgs/top_scan.jpeg" alt="Polycam cleanup details" width="300">
 
-
 ## Step 2: Import 3D model -> Meshlab
 
-*why? to ensure the mesh is optimized + fixed! we want our obj file to be as small as possible but still retaining as much detail. So we use these tools to clean up any unnecessary vertices/planes that won't effect the overall final model*
+_why? to ensure the mesh is optimized + fixed! we want our obj file to be as small as possible but still retaining as much detail. So we use these tools to clean up any unnecessary vertices/planes that won't effect the overall final model_
 
 - Open your model(obj) in Meshlab to clean up vertices/planes/holes
 - Every model is different but I recommend to go through filters -> cleaning & repairing folder
@@ -104,22 +106,44 @@ You can honestly lay your laptop flat (CLOSED). And scan both sides. If your lap
 
 **Step 3.2 - Fixing Model in Blender(Double-Checking)**
 
-*why? usually I like to double check + fix any remaining issues in the model to ensure optimization!*
+_why? usually I like to double check + fix any remaining issues in the model to ensure optimization!_
 
 - Go into Edit mode -> Select Mode: FACE
 
 <img src="imgs/blender_editMode.png" alt="Polycam cleanup details" width="300">
 
-
 - Select All(A) -> Under "Mesh" -> "Clean Up"
-    These are the clean up options I would use:
-    - Fill Holes
-    - Merge by Distance
-    - Delete Loose
+  These are the clean up options I would use:
+  - Fill Holes
+  - Merge by Distance
+  - Delete Loose
 
-**Step 3.3 - Adding Texture to Specific Surfaces**
-
-*why? we can align the flatbed scans onto the 3D model!*
+**Step 3.3 - Seperating Planes**
 
 - Make sure the "Selected: Mode" is on faces
-- 
+
+Selected the panel/surface you are mapping the scan to.
+
+<img src="imgs/blender_step4.png" alt="Polycam cleanup details" width="300">
+
+Once selected:
+    Click Mesh -> Seperate -> Selection
+
+This seperates into panels, so you can add the flatbed scans onto. This keeps everything seperate and organized. Since we are adding multiple different scans as textures, we need to seperate it. 
+
+<img src="imgs/blender_step5.png" alt="Polycam cleanup details" width="300">
+
+
+**Step 3.4 - Creating new UV map**
+
+*why? we need to create a new UV map because when we put a new texture, the map will be aligned from the 'old map' when it was full 3D model. Since we are seperating them into panels, we need to make sure the new UV map will fully map(fill) onto the new texture.*
+
+
+**Step 3.4 - Adding scan texture**
+
+
+
+_why? we can align the flatbed scans onto the 3D model!_
+
+- Make sure the "Selected: Mode" is on faces
+-

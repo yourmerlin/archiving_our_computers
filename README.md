@@ -17,7 +17,8 @@ Tutorial on how to archive your own computer to be part of computers.json :-)
 
 File Set up Example:
 
-```--- {name}_computer_archive (folder)
+```
+--- {name}_computer_archive (folder)
         |
         --- polycam_EXPORT (folder)
             |

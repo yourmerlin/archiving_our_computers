@@ -62,14 +62,21 @@ File Set up Example:
 
 - Export your model as a OBJ file !
 
-## Step 2: Flatbed Scan the Surfaces
+## Step 2: Scan the Surfaces (via flatbed scanner)
 
 *why? we want to get high quality scans because photogrammetry will not capture these fine, tiny details. Using a flatbed scanner to capture the surfaces will allow us to create high-resolution 3D 'captures'.*
 
 Settings (I used, may differ between scanners!):
 - 600 DPI (300 DPI minimum)
 - JPEG OUTPUT (tiff/png is OK! no pdf)
-- Scanned Tabloid 
+- Scanned at Tabloid size (landscape) 
+
+<img src="imgs/flatbed_scanner.jpeg" alt="Polycam cleanup details" width="300">
+
+You can honestly lay your laptop flat (CLOSED). And scan both sides. If your laptop can be layed flat (when its open), I would scan the inside of the laptop (keyboard + screen). When the screen is on, it wont show up but we are just capturing the other details so its ok.
+
+<img src="imgs/top_scan.jpeg" alt="Polycam cleanup details" width="300">
+
 
 ## Step 2: Import 3D model -> Meshlab
 

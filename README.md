@@ -71,6 +71,11 @@ Settings (I used, may differ between scanners!):
 - JPEG OUTPUT (tiff/png is OK! no pdf)
 - Scanned at Tabloid size (landscape) 
 
+Surfaces to Scan:
+- Top Surface of Laptop
+- Bottom Surface of Laptop
+- Inside of Laptop (keyboard & screen) *(If possible)*
+
 <img src="imgs/flatbed_scanner.jpeg" alt="Polycam cleanup details" width="300">
 
 You can honestly lay your laptop flat (CLOSED). And scan both sides. If your laptop can be layed flat (when its open), I would scan the inside of the laptop (keyboard + screen). When the screen is on, it wont show up but we are just capturing the other details so its ok.

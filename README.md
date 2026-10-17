@@ -8,11 +8,13 @@ Tutorial on how to archive your own computer to be part of computers.json :-)
 - Blender (Free!)
 - MeshLab (Free!)
 
-# Step 1: Using Polycam 
+## Step 1: Using Polycam 
 Place your laptop on a flat surface. Ideally with good lighting. Take out polycam on mobile and use either auto/manual mode to take pictures of your devices (via photogrammetry). I recommend to check out this video made by Polycam for further help :)
 
 When you are done capturing, make sure you check on object masking so it automatically does it for you. 
 
-# Step 2: 
+## Step 2: Take 3D model -> Meshlab
+
+
 
 

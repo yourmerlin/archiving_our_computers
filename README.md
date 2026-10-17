@@ -15,7 +15,7 @@ Tutorial on how to archive your own computer to be part of computers.json :-)
 Place your laptop on a flat surface. Ideally with good lighting. Take out polycam on mobile and use either auto/manual mode to take pictures of your devices (via photogrammetry). I recommend to check out this video made by Polycam for further help :)
 
 These are the settings to choose after:
-![alt text](polycam_options.jpg)
+![alt text](imgs/polycam_options.jpg)
 
 When you are done capturing, make sure you check on object masking so it automatically does it for you.
 

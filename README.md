@@ -178,7 +178,7 @@ Result!
 
 - Make sure to export as glTF 2.0 (.glb/.gltf)!
 
-## Please Submit via the Computer Archive Submission Form!(https://forms.gle/5aMCwi9YGYJsrawSA)
+## Please Submit via the [Computer Archive Submission Form](https://forms.gle/5aMCwi9YGYJsrawSA)!
 
 **ZIP FILE SHOULD INCLUDE:**
 
@@ -187,7 +187,7 @@ Result!
 - textures (FOLDER)
 - scans (FOLDER)
 
-## Please fill out the feedback form so I can improve/fix any issues in the tutorial!(https://forms.gle/EAfnr9bHLjHhQQ3q8)
+## Please fill out the [feedback form](https://forms.gle/EAfnr9bHLjHhQQ3q8) so I can improve/fix any issues in the tutorial!
 
 *thanks so much for being part of the archive <3*
 

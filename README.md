@@ -1,16 +1,16 @@
-# How to Archive your Computer!
+# How to Archive Your Computer!
 
-<img src="imgs/computerjson_CLOSEUP.png" alt="Polycam settings" width="300">
+<img src="imgs/computerjson_CLOSEUP.png" alt="Close-up of computers.json" width="300">
 
-Tutorial on how to archive your own computer to be part of computers.json :-)
+A tutorial on how to archive your own computer so it can be part of computers.json :-)
 
-Everything is completely free and can be DIYed! It is okay if it it jank! It is made by humans! Lets use what we have accessible to us--no fancy, expensive equipment required! :-)
+Everything is completely free and can be DIYed! It is okay if it is janky! It is made by humans! Let's use what we have access to--no fancy, expensive equipment required! :-)
 
-## Tools/Software needed
+## Tools/Software Needed
 
-- Polycam (Free version, OK!)
+- Polycam (Free version is OK!)
 - Your phone!
-- Flatbed Photo Scanner (Find one at your local library/makerspace!)
+- Flatbed photo scanner (Find one at your local library/makerspace!)
 - Blender (Free!)
 - MeshLab (Free!)
 
@@ -19,7 +19,7 @@ Everything is completely free and can be DIYed! It is okay if it it jank! It is 
 - Have a GOOD file system!
 - Make sure to LABEL properly!
 
-File Set up Example:
+File Setup Example:
 
 ```
 --- {name}_computer_archive (folder)
@@ -45,127 +45,150 @@ File Set up Example:
             --- {name}_computer.blend
             --- textures_UPDATED (folder)
                 |
-                --- (COPY flatbedScans_Export folder) HERE)
+                --- (COPY flatbedScans_EXPORT folder HERE)
             --- textures_POLYCAM (folder)
 ```
 
 ## Step 1: Open Polycam
 
-- Place your laptop on a flat surface. Ideally with good lighting.
-- Take out polycam on mobile and use either auto/manual mode to take pictures of your devices (via photogrammetry). I recommend to check out this video made by Polycam for further help :)
+- Place your laptop on a flat surface, ideally with good lighting.
+- Open Polycam on your phone and use either auto or manual mode to take pictures of your device (via photogrammetry). I recommend checking out this video made by Polycam for further help :)
 
-- These are the settings to choose after:
+- These are the settings to choose afterward:
 
 <img src="imgs/polycam_options.jpg" alt="Polycam settings" width="300">
 
-- I highly recommend to crop + do small edits in the polycam settings !
+- I highly recommend cropping + doing small edits in the Polycam settings!
 
 <img src="imgs/polycam_cleanup.png" alt="Polycam cleanup details" width="300">
 
-- Export your model as a OBJ file !
+- Export your model as an OBJ file!
 
-## Step 2: Scan the Surfaces (via flatbed scanner)
+## Step 2: Scan the Surfaces (via Flatbed Scanner)
 
-_why? we want to get high quality scans because photogrammetry will not capture these fine, tiny details. Using a flatbed scanner to capture the surfaces will allow us to create high-resolution 3D 'captures'._
+_Why? We want high-quality scans because photogrammetry will not capture the fine, tiny details. Using a flatbed scanner to capture the surfaces will allow us to create high-resolution 3D 'captures'._
 
-Settings (I used, may differ between scanners!):
+Settings (the ones I used, may differ between scanners!):
 
 - 600 DPI (300 DPI minimum)
-- JPEG OUTPUT (tiff/png is OK! no pdf)
-- Scanned at Tabloid size (landscape)
+- JPEG output (TIFF/PNG is OK! No PDF)
+- Scanned at tabloid size (landscape)
 
 Surfaces to Scan:
 
-- Top Surface of Laptop
-- Bottom Surface of Laptop
-- Inside of Laptop (keyboard & screen) _(If possible)_
+- Top surface of laptop
+- Bottom surface of laptop
+- Inside of laptop (keyboard & screen) _(if possible)_
 
-<img src="imgs/flatbed_scanner.jpeg" alt="Polycam cleanup details" width="300">
+<img src="imgs/flatbed_scanner.jpeg" alt="Laptop on a flatbed scanner" width="300">
 
-You can honestly lay your laptop flat (CLOSED). And scan both sides. If your laptop can be layed flat (when its open), I would scan the inside of the laptop (keyboard + screen). When the screen is on, it wont show up but we are just capturing the other details so its ok.
+You can honestly just lay your laptop flat (CLOSED) and scan both sides. If your laptop can lie flat when it's open, I would also scan the inside of the laptop (keyboard + screen). Even if the screen is on, it won't show up in the scan, but we are just capturing the other details, so it's ok.
 
-<img src="imgs/top_scan.jpeg" alt="Polycam cleanup details" width="300">
+<img src="imgs/top_scan.jpeg" alt="Flatbed scan of the top surface of a laptop" width="300">
 
-## Step 2: Import 3D model -> Meshlab
+## Step 3: Import 3D Model -> MeshLab
 
-_why? to ensure the mesh is optimized + fixed! we want our obj file to be as small as possible but still retaining as much detail. So we use these tools to clean up any unnecessary vertices/planes that won't effect the overall final model_
+_Why? To make sure the mesh is optimized + fixed! We want our OBJ file to be as small as possible while still retaining as much detail as possible. So we use these tools to clean up any unnecessary vertices/planes that won't affect the overall final model._
 
-- Open your model(obj) in Meshlab to clean up vertices/planes/holes
-- Every model is different but I recommend to go through filters -> cleaning & repairing folder
+- Open your model (OBJ) in MeshLab to clean up vertices/planes/holes
+- Every model is different, but I recommend going through Filters -> Cleaning and Repairing
 
-<img src="imgs/meshlab_settings.png" alt="Polycam cleanup details" width="300">
+<img src="imgs/meshlab_settings.png" alt="MeshLab cleaning and repairing filters" width="300">
 
-- Save your model(obj)
+- Save your model (OBJ)
 
-## Step 3: Import new 3D model -> Blender
+## Step 4: Import New 3D Model -> Blender
 
-**Step 3.1**
+**Step 4.1**
 
-- Import OBJ file -> set origin to "Origin to center of Mass(Volume) -> scale size -> fix rotation so the model sits flat on the plane
+- Import OBJ file -> set origin to "Origin to Center of Mass (Volume)" -> scale size -> fix rotation so the model sits flat on the plane
 
-<img src="imgs/blender_step1.png" alt="Polycam cleanup details" width="300">
+<img src="imgs/blender_step1.png" alt="Setting the origin in Blender" width="300">
 
-**Step 3.2 - Fixing Model in Blender(Double-Checking)**
+**Step 4.2 - Fixing the Model in Blender (Double-Checking)**
 
-_why? usually I like to double check + fix any remaining issues in the model to ensure optimization!_
+_Why? I usually like to double-check + fix any remaining issues in the model to ensure it's optimized!_
 
-- Go into Edit mode -> Select Mode: FACE
+- Go into Edit Mode -> Select Mode: FACE
 
-<img src="imgs/blender_editMode.png" alt="Polycam cleanup details" width="300">
+<img src="imgs/blender_editMode.png" alt="Blender Edit Mode with face select" width="300">
 
-- Select All(A) -> Under "Mesh" -> "Clean Up"
+- Select All (A) -> under "Mesh" -> "Clean Up"
   These are the clean up options I would use:
   - Fill Holes
   - Merge by Distance
   - Delete Loose
 
-**Step 3.3 - Seperating Planes**
+**Step 4.3 - Separating Planes**
 
-- Make sure the "Selected: Mode" is on faces
+- Make sure the "Select Mode" is on faces
 
-Selected the panel/surface you are mapping the scan to.
+Select the panel/surface you are mapping the scan to.
 
-<img src="imgs/blender_step4.png" alt="Polycam cleanup details" width="300">
+<img src="imgs/blender_step4.png" alt="Selecting a laptop panel in Blender" width="300">
 
 Once selected:
-Click Mesh -> Seperate -> Selection
+Click Mesh -> Separate -> Selection
 
-This seperates into panels, so you can add the flatbed scans onto. This keeps everything seperate and organized. Since we are adding multiple different scans as textures, we need to seperate it.
+This separates the model into panels, so you can add the flatbed scans onto them. This keeps everything separate and organized. Since we are adding multiple different scans as textures, we need to separate them.
 
-<img src="imgs/blender_step5.png" alt="Polycam cleanup details" width="300">
+<img src="imgs/blender_step5.png" alt="Separated panel in Blender" width="300">
 
-**Step 3.4 - Creating new UV map**
+**Step 4.4 - Creating a New UV Map**
 
-_why? we need to create a new UV map because when we put a new texture, the map will be aligned from the 'old map' when it was full 3D model. Since we are seperating them into panels, we need to make sure the new UV map will fully map(fill) onto the new texture._
+_Why? We need to create a new UV map because when we add a new texture, it will be aligned to the 'old map' from when it was the full 3D model. Since we are separating it into panels, we need to make sure the new UV map will fully map (fill) onto the new texture._
 
-<img src="imgs/blender_step6.png" alt="Polycam cleanup details" width="300">
+<img src="imgs/blender_step6.png" alt="UV Project from View in Blender" width="300">
 
-- UV -> Project from view (Bounds)
-  - Make sure that you are positioning it straight on (+ FLAT)
-  - _what you are viewing, is how the UV map is going to look exactly_
+- UV -> Project from View (Bounds)
+  - Make sure that you are viewing it straight on (+ FLAT)
+  - _What you are viewing is exactly how the UV map is going to look_
 
-**Step 3.5 - Scan -> New Material Surface**
+**Step 4.5 - Scan -> New Material Surface**
 
-_why? so each surface + scan has an assigned material texture. so you can have a seperate texture from the polycam 3D scam. Do not overwrite the original texture, just add a new one. We will use the OG polycam 3D scan texture to fill out gaps that could not be scanned from the flatbed scanner_
+_Why? So each surface + scan has its own assigned material texture, separate from the Polycam 3D scan texture. Do not overwrite the original texture, just add a new one. We will use the OG Polycam 3D scan texture to fill in gaps that could not be scanned with the flatbed scanner._
 
-- Make sure you are on Edit mode
-- Make sure the selected:mode is on FACES
+- Make sure you are in Edit Mode
+- Make sure the Select Mode is on FACES
 - Select ALL (A)
-- Click on the + on the right side of the editor-type:propterties
+- Click on the + on the right side of the Properties editor
   - Add a new material slot (NAME IT)
-  - Hit Assign (Make sure all of mesh is selected)
+  - Hit Assign (make sure all of the mesh is selected)
 
-<img src="imgs/blender_step7.png" alt="Polycam cleanup details" width="300">
+<img src="imgs/blender_step7.png" alt="Adding a material slot in Blender" width="300">
 
-**Step 3.6 - Adding New Image texture -> New Material Surface**
+**Step 4.6 - Adding a New Image Texture -> New Material Surface**
 
-_why? so you can import the flatbed scan as a texture for the material_
+_Why? So you can import the flatbed scan as a texture for the material._
 
-- Make sure your flatbed scanned is cropped + in the correct orientation
-- In the same section, scroll to BASE -> Texture -> Image Texture -> Import Scan
+- Make sure your flatbed scan is cropped + in the correct orientation
+- In the same section, scroll to Base Color -> Image Texture -> import your scan
 
-<img src="imgs/blender_step8.png" alt="Polycam cleanup details" width="300">
+<img src="imgs/blender_step8.png" alt="Adding an image texture in Blender" width="300">
 
-Result:
+Result!
 
-<img src="imgs/blender_step9.png" alt="Polycam cleanup details" width="300">
+<img src="imgs/blender_step9.png" alt="Laptop panel with flatbed scan texture applied" width="300">
+
+**Step 4.7 - Repeat!**
+
+- Repeat the process for the other surfaces!
+
+**Step 4.8 - EXPORT**
+
+- Make sure to export as glTF 2.0 (.glb/.gltf)!
+
+## Please Submit via the Computer Archive Submission Form!(https://forms.gle/5aMCwi9YGYJsrawSA)
+
+**ZIP FILE SHOULD INCLUDE:**
+
+- {name}\_computer.glb/gltf
+- {name}\_computer.blend
+- textures (FOLDER)
+- scans (FOLDER)
+
+## Please fill out the feedback form so I can improve/fix any issues in the tutorial!(https://forms.gle/EAfnr9bHLjHhQQ3q8)
+
+*thanks so much for being part of the archive <3*
+
+    *- made with love, merlin*

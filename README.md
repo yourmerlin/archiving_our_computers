@@ -144,7 +144,7 @@ _why? we need to create a new UV map because when we put a new texture, the map 
   - Make sure that you are positioning it straight on (+ FLAT)
   - _what you are viewing, is how the UV map is going to look exactly_
 
-**Step 3.4 - Scan -> New Material Surface**
+**Step 3.5 - Scan -> New Material Surface**
 
 _why? so each surface + scan has an assigned material texture. so you can have a seperate texture from the polycam 3D scam. Do not overwrite the original texture, just add a new one. We will use the OG polycam 3D scan texture to fill out gaps that could not be scanned from the flatbed scanner_
 
@@ -157,7 +157,7 @@ _why? so each surface + scan has an assigned material texture. so you can have a
 
 <img src="imgs/blender_step7.png" alt="Polycam cleanup details" width="300">
 
-**Step 3.5 - Adding New Image texture -> New Material Surface**
+**Step 3.6 - Adding New Image texture -> New Material Surface**
 
 _why? so you can import the flatbed scan as a texture for the material_
 

@@ -191,4 +191,4 @@ Result!
 
 *thanks so much for being part of the archive <3*
 
-    *- made with love, merlin*
+*made with love, merlin*

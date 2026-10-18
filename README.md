@@ -1,4 +1,5 @@
 # How to Archive your Computer!
+
 <img src="imgs/computerjson_CLOSEUP.png" alt="Polycam settings" width="300">
 
 Tutorial on how to archive your own computer to be part of computers.json :-)
@@ -127,23 +128,44 @@ Selected the panel/surface you are mapping the scan to.
 <img src="imgs/blender_step4.png" alt="Polycam cleanup details" width="300">
 
 Once selected:
-    Click Mesh -> Seperate -> Selection
+Click Mesh -> Seperate -> Selection
 
-This seperates into panels, so you can add the flatbed scans onto. This keeps everything seperate and organized. Since we are adding multiple different scans as textures, we need to seperate it. 
+This seperates into panels, so you can add the flatbed scans onto. This keeps everything seperate and organized. Since we are adding multiple different scans as textures, we need to seperate it.
 
 <img src="imgs/blender_step5.png" alt="Polycam cleanup details" width="300">
 
-
 **Step 3.4 - Creating new UV map**
 
-*why? we need to create a new UV map because when we put a new texture, the map will be aligned from the 'old map' when it was full 3D model. Since we are seperating them into panels, we need to make sure the new UV map will fully map(fill) onto the new texture.*
+_why? we need to create a new UV map because when we put a new texture, the map will be aligned from the 'old map' when it was full 3D model. Since we are seperating them into panels, we need to make sure the new UV map will fully map(fill) onto the new texture._
 
+<img src="imgs/blender_step6.png" alt="Polycam cleanup details" width="300">
 
-**Step 3.4 - Adding scan texture**
+- UV -> Project from view (Bounds)
+  - Make sure that you are positioning it straight on (+ FLAT)
+  - _what you are viewing, is how the UV map is going to look exactly_
 
+**Step 3.4 - Scan -> New Material Surface**
 
+_why? so each surface + scan has an assigned material texture. so you can have a seperate texture from the polycam 3D scam. Do not overwrite the original texture, just add a new one. We will use the OG polycam 3D scan texture to fill out gaps that could not be scanned from the flatbed scanner_
 
-_why? we can align the flatbed scans onto the 3D model!_
+- Make sure you are on Edit mode
+- Make sure the selected:mode is on FACES
+- Select ALL (A)
+- Click on the + on the right side of the editor-type:propterties
+  - Add a new material slot (NAME IT)
+  - Hit Assign (Make sure all of mesh is selected)
 
-- Make sure the "Selected: Mode" is on faces
--
+<img src="imgs/blender_step7.png" alt="Polycam cleanup details" width="300">
+
+**Step 3.5 - Adding New Image texture -> New Material Surface**
+
+_why? so you can import the flatbed scan as a texture for the material_
+
+- Make sure your flatbed scanned is cropped + in the correct orientation
+- In the same section, scroll to BASE -> Texture -> Image Texture -> Import Scan
+
+<img src="imgs/blender_step8.png" alt="Polycam cleanup details" width="300">
+
+Result:
+
+<img src="imgs/blender_step9.png" alt="Polycam cleanup details" width="300">

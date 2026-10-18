@@ -1,4 +1,4 @@
-# How to Archive Your Computer!
+# [How to Archive Your Computer!](https://iluvmy.computer/)
 
 <img src="imgs/computerjson_CLOSEUP.png" alt="Close-up of computers.json" width="300">
 
